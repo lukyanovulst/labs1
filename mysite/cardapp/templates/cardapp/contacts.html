@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}Контакты{% endblock %}
+
+{% block content %}
+<div class="contacts-container">
+    <h2>Мои контакты</h2>
+
+    <div class="contact-cards">
+        <div class="contact-card vk">
+            <h3>ВКонтакте</h3>
+            <p>Основной способ связи</p>
+            <a href="https://vk.com/id244095997" target="_blank" class="btn">
+                Перейти в ВК
+            </a>
+        </div>
+
+        <div class="contact-card email">
+            <h3>Email</h3>
+            <p>Для деловых предложений</p>
+            <a href="mailto:student@ulstu.ru" class="btn">
+                student@ulstu.ru
+            </a>
+        </div>
+
+        <div class="contact-card telegram">
+            <h3>Telegram</h3>
+            <p>Для быстрой связи</p>
+            <a href="https://t.me/SSS073s" target="_blank" class="btn">
+                @SSS073s
+            </a>
+        </div>
+    </div>
+
+    <div class="contact-info">
+        <p><strong>Важно:</strong> Отвечаю на сообщения в течение дня. Предпочитаю общение в ВК или Telegram.</p>
+        <p>Не стесняйтесь писать по вопросам сотрудничества, проектов или просто поболтать о технологиях!</p>
+    </div>
+</div>
+{% endblock %}

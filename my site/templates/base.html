@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block tittle %}Моя визитка{% endblock %}</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'style.css')}}">
+</head>
+<body>
+<header class = "header">
+    <div class = "container header-inner">
+        <div class = "logo"> Моя визитка </div>
+        <nav>
+            <a href="/"> Главная </a>
+            <a href="/about"> Обо мне </a>
+            <a href="/contacts"> Контакты </a>
+        </nav>
+    </div>
+</header>
+<main class = "container">
+    {% block content %}{% endblock %}
+</main>
+<footer class = "footer">
+    © 2025. Сделано на Flask
+</footer>
+</body>
+</html>

@@ -8,7 +8,7 @@ class SpiderMazeAdventure:
 
     def __init__(self, window, grid_width=21, grid_height=15, tile_size=30, countdown=10):
         self.window = window
-        self.window.title("Приключения паука (BFS)")
+        self.window.title("Приключения паука")
         self.grid_width = grid_width if grid_width % 2 == 1 else grid_width + 1
         self.grid_height = grid_height if grid_height % 2 == 1 else grid_height + 1
         self.tile_size = tile_size
@@ -213,3 +213,4 @@ if __name__ == "__main__":
     root = tk.Tk()
     game = SpiderMazeAdventure(root)
     root.mainloop()
+
